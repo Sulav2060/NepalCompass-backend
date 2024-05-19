@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sidebar_links",
+  "info": {
+    "displayName": "links",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

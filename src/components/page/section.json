@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_page_sections",
+  "info": {
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "SectionText": {
+      "type": "text"
+    },
+    "sectionRichText": {
+      "type": "richtext"
+    },
+    "SectionRecommendation": {
+      "type": "string"
+    },
+    "Table": {
+      "type": "json"
+    },
+    "SectionNote": {
+      "type": "string"
+    }
+  }
+}

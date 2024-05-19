@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accommodation",
+  "info": {
+    "singularName": "accommodation",
+    "pluralName": "accommodations",
+    "displayName": "accommodation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },  
+  "pluginOptions": {},
+  "attributes": {
+    "accommodationnInNepal": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.section"
+    }
+  }
+}
