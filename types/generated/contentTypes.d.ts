@@ -800,7 +800,7 @@ export interface ApiAccommodationAccommodation extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    accommodationnInNepal: Attribute.Component<'page.section', true>;
+    accommodation: Attribute.Component<'page.section', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -851,6 +851,68 @@ export interface ApiArrivingArriving extends Schema.CollectionType {
   };
 }
 
+export interface ApiCulturalexperienceCulturalexperience
+  extends Schema.CollectionType {
+  collectionName: 'culturalexperiences';
+  info: {
+    singularName: 'culturalexperience';
+    pluralName: 'culturalexperiences';
+    displayName: 'Culturalexperience';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CulturalExperiences: Attribute.Component<'page.section', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::culturalexperience.culturalexperience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::culturalexperience.culturalexperience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFoodAndDrinkFoodAndDrink extends Schema.CollectionType {
+  collectionName: 'food_and_drinks';
+  info: {
+    singularName: 'food-and-drink';
+    pluralName: 'food-and-drinks';
+    displayName: 'Food and Drink';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    FoodAndDrink: Attribute.Component<'page.section', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::food-and-drink.food-and-drink',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::food-and-drink.food-and-drink',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSidebarSidebar extends Schema.SingleType {
   collectionName: 'sidebars';
   info: {
@@ -882,6 +944,36 @@ export interface ApiSidebarSidebar extends Schema.SingleType {
   };
 }
 
+export interface ApiTrekkingTrekking extends Schema.CollectionType {
+  collectionName: 'trekkings';
+  info: {
+    singularName: 'trekking';
+    pluralName: 'trekkings';
+    displayName: 'Trekking';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    trekking: Attribute.Component<'page.section', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::trekking.trekking',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::trekking.trekking',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -902,7 +994,10 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::accommodation.accommodation': ApiAccommodationAccommodation;
       'api::arriving.arriving': ApiArrivingArriving;
+      'api::culturalexperience.culturalexperience': ApiCulturalexperienceCulturalexperience;
+      'api::food-and-drink.food-and-drink': ApiFoodAndDrinkFoodAndDrink;
       'api::sidebar.sidebar': ApiSidebarSidebar;
+      'api::trekking.trekking': ApiTrekkingTrekking;
     }
   }
 }

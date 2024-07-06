@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "accommodation",
+  "collectionName": "food_and_drinks",
   "info": {
-    "singularName": "accommodation",
-    "pluralName": "accommodations",
-    "displayName": "accommodation",
-    "description": ""
+    "singularName": "food-and-drink",
+    "pluralName": "food-and-drinks",
+    "displayName": "Food and Drink"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "accommodation": {
+    "FoodAndDrink": {
       "type": "component",
       "repeatable": true,
       "component": "page.section"

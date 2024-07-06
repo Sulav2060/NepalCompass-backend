@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "accommodation",
+  "collectionName": "culturalexperiences",
   "info": {
-    "singularName": "accommodation",
-    "pluralName": "accommodations",
-    "displayName": "accommodation",
+    "singularName": "culturalexperience",
+    "pluralName": "culturalexperiences",
+    "displayName": "Culturalexperience",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "accommodation": {
+    "CulturalExperiences": {
       "type": "component",
       "repeatable": true,
       "component": "page.section"

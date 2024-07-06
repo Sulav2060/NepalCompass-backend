@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "accommodation",
+  "collectionName": "trekkings",
   "info": {
-    "singularName": "accommodation",
-    "pluralName": "accommodations",
-    "displayName": "accommodation",
-    "description": ""
+    "singularName": "trekking",
+    "pluralName": "trekkings",
+    "displayName": "Trekking"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "accommodation": {
+    "trekking": {
       "type": "component",
       "repeatable": true,
       "component": "page.section"
